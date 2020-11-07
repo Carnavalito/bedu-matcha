@@ -1,10 +1,12 @@
 h1 {
     color :  #025157;
     text-align: center;
+    
 }
 h4 {
     color: #46484c;
     text-align: center;
+
 }
 input{
     display: block;
@@ -29,5 +31,12 @@ img{
     display: block;
     margin-right: auto;
     margin-left: auto;
+
+}
+
+h3{
+    color:gold;
+    size: 40px;
+    text-align: center;
 
 }
