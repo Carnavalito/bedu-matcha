@@ -1,0 +1,33 @@
+h1 {
+    color :  #025157;
+    text-align: center;
+}
+h4 {
+    color: #46484c;
+    text-align: center;
+}
+input{
+    display: block;
+    
+
+}
+button{
+    color: #fff;
+    background-color:#025157 ;
+    display: block;
+    padding: 10px 30px;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+html{
+    background-color: #fffbf7;
+}
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
