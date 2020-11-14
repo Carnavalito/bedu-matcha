@@ -3,6 +3,7 @@ h1 {
     text-align: center;
     font-size: 60px;
     font-family: "Alegreya", serif;
+    
 }
 h4 {
     color: #46484c;
@@ -11,16 +12,22 @@ h4 {
 }
 input{
     display: block;
-    
+    border-radius: 5px;
+    width: 250px;
 
 }
+
+
 .b1{
     color: #fff;
     background-color:#025157 ;
     display: block;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: medium;
    
 }
-form{
+.tryitnow{
     display: flex;
     justify-content: center;
     
@@ -32,6 +39,7 @@ html{
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 40px;
 
 }
 .intro{
@@ -41,27 +49,37 @@ html{
     width: 70%;
 }
 
-.header > *{
-    display: inline-block;
-    font-size: 16px;
-    vertical-align: middle;
-    height: 100%;
-    line-height: 45px;
-
-}
-li {
-    display: inline;
-  }
 .header {
     margin-left: 20px;
-    margin-right:20px;
-    margin-top: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
     margin-bottom:40 px ;
     font-size: 0;
     height:45px;
     font-family: sans-serif;
 }
 
+
+.header > *{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 35px;
+
+}
+.menuitem li {
+    display: inline;
+    padding: 3%;
+    
+    
+  }
+
+  .menuitem li a{
+    color: black;
+    text-decoration: none;
+    font-weight:100 ;
+  }
 
 .logo{
     width: 15%;
@@ -74,15 +92,22 @@ li {
 .navbar {
     width: 70%;
     text-align: center;
-    color:#025157;
-    font-weight: 500;
+    color:#1e3e41;
+    font-weight: 600;
+   
+    
     
 }
+.menuitem{
+   font-size: large;
+   font-family:Arial, Helvetica, sans-serif;
+   
+  }
+   
 
 .actions{
    width:15%; 
    text-align: right;
-   font-size: 14px;
    font-size: 600;
    margin-left: 0px;
    margin-right: 0px;
@@ -93,6 +118,8 @@ li {
 
 .p1{
     text-align: center;
+    margin-bottom: 40px;
+    
 }
 
 .b2{
@@ -103,6 +130,7 @@ li {
      padding-bottom: 12px;
      padding-right: 14px;
      border-radius: 5px;
+     border: 0;
 }
 
 .publish {
@@ -124,8 +152,9 @@ li {
     margin-bottom: 20px;
   }
   
-  .publish > form {
+  .publish  form {
     display: flex;
+  
   }
   
   .publish > form p {
@@ -133,6 +162,13 @@ li {
     margin-right: 18px;
   }
   
+ .i2{ 
+  display: block;
+  border-radius: 5px;
+  width: 250px;
+
+}
+
   .promo{
       display: flex;
       width: 70%;
@@ -144,22 +180,95 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex:1;
   }
   
   .explanatory-video img {
-    width: 120px;
+    width: 200px;
     margin-top: 10px;
-    flex:1;
+    
   }
+  
 
-  .fixed-header{
+.fixed-header{
       position: fixed;
       top: 0;
       left: 0;
      right: 0;
      background-color: #fffbf7;
   }
+  
   main {
     margin-top: 285px;
     text-align: center;
   }
+
+  .features {
+      display: grid;
+      grid-template-rows: 330px 330px;
+      grid-template-columns: 1fr 1fr ;
+      background-color: #025157;
+      padding: 5% 10%;  
+    
+  }
+
+ 
+
+ .features .feature-card{
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+.features .feature-card .feature-content{
+  padding: 30px 20px 40px 40px;
+  flex: 2;  
+}
+
+.features .feature-card .feature-content > * {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.features .feature-card .feature-content img {
+  width: 50px;
+}
+
+.features .feature-card .feature-content p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+
+.features .feature-card .feature-content a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.features .feature-card .feature-image {
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -50px;
+  height: 80%;
+}
+
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
+  margin-top: 0;
+  height: 100%;
+}
+
+  
+
+
+  
+  
