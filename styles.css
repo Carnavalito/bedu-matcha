@@ -116,6 +116,20 @@ html{
 
 }
 
+@media (max-width: 575px) {
+  .navbar,
+  .actions {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  body {
+    margin-top: 130px;
+  }
+}
+
 .p1{
     text-align: center;
     margin-bottom: 40px;
@@ -156,6 +170,10 @@ html{
     display: flex;
   
   }
+
+  .divpublish{
+    display: inherit;
+  }
   
   .publish > form p {
     color: #025157;
@@ -175,7 +193,25 @@ html{
       margin: 100px auto;
       align-items: center;
   }
-
+  @media (max-width: 575px) {
+    /** Media queries previos al banner **/
+    .promo {
+      flex-direction: column;
+      max-width: 90%;
+    }
+    .explanatory-video > video {
+      width: 100%;
+    }
+    
+    .publish {
+      margin-top: 10px;
+    }
+  
+    .publish > h3 {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+  }
   .explanatory-video {
     display: flex;
     flex-direction: column;
@@ -267,8 +303,231 @@ html{
   height: 100%;
 }
 
+
+.flexcontainer{
+   background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+.flexiner div{
+border: solid white;
+
+}
+.item{
+  flex: 2;
+  padding-right: 100px;
+  text-align: left;
+}
+
+.item h2{
+  font-family: "Alegreya", serif;
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+}
+
+.item p{
+  color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.item button{
+  font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+    color: white;
+    background-color:#025157 ;
   
 
+}
+.item img{
 
+  width: 500px;
+  max-width: 100%;
+}
+
+
+.text{
+
+  flex:1;
+  background-color: white ;
+  border-radius: 10px;
+}
+
+.text img{
+  width: 100%;
+  max-height: 16vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+}
+
+.text .company{
+  height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    z-index: -1;
+}
+
+.text h4{
+  color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.text h3{
+  font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
   
+.text .divtext{
+  display: flex;
+}
+
+.text .divtext img{
+  width: 40px;
+    margin-right: 20px;
+}
+
+.card-footer button{
+  background-color: #025157;
+    color: #fff;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section .how-matcha-works{
+  background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.hdmw h2{
+  color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+}
+
+.hdmw p{
+  max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.hdmw p a{
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.hdmw button{
+  background-color: #025157;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.matchagrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-top: 30px;
+  overflow:auto;
+ 
+}
+
+
+.card{
+  background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
   
+}
+.cardimg{
+  position: relative;
+  height: 350px;
+}
+
+.card-step-icon{
+  position: absolute;
+  left: 5px;
+}
+
+
+@media (max-width: 575px) {
+  /** Media queries previos al banner **/
+  .banner > img {
+    width: 100%;
+  }
+
+  @media (max-width: 575px) {
+    .publish > form{
+      flex-direction: column;
+      widows: 90%;
+    }
+    .publish > form > div {
+      height: 50px;
+      margin-top: 10px;
+    }
+  
+    .publish > form > div > input {
+      width: 65%;
+    }
+    .publish >form >div > button{
+      padding: 0;
+    }
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+
+      }
+    .feature-image{
+      display: none;
+    }
+    }
+
+
+}
