@@ -170,13 +170,7 @@ html{
   }
   
 
-.fixed-header{
-      position: fixed;
-      top: 0;
-      left: 0;
-     right: 0;
-     background-color: #fffbf7;
-  }
+
   
   body {
     /* margin-top: 285px; */
@@ -439,7 +433,17 @@ section .how-matcha-works{
   left: 5px;
 }
 
+.navbar-light .nav-item .nav-link {
+  color: #025157;
+}
 
+.navbar-light .navbar-toggler {
+  border-color: #025157;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 @media (max-width: 575px) {
   /** Media queries previos al banner **/
   .banner > img {
