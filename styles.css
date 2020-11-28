@@ -450,7 +450,6 @@ section .how-matcha-works{
     width: 100%;
   }
 
-  @media (max-width: 575px) {
     .publish > form{
       flex-direction: column;
       widows: 90%;
@@ -475,7 +474,20 @@ section .how-matcha-works{
     .feature-image{
       display: none;
     }
+
+    .flexcontainer{
+      flex-direction: column;
+      padding: 5% 15px;
+      
+    }
+    .flexcontainer> .item{
+    padding-right: unset;
+  }
+    .flexcontainer .item>h2{
+      font-size: 25px;
+    line-height: 30px;
+    border;
     }
 
-
 }
+
